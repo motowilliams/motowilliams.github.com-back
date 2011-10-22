@@ -2,11 +2,12 @@
 layout: default
 title: Tags
 ---
-Tags:
+
 {% for category,posts in site.categories %}
 Category: {{category}}
 
 {% for post in posts %}
+Post:
 {{post.title}}
 {% endfor %}
 
