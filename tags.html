@@ -3,13 +3,11 @@ layout: default
 title: Tags
 ---
 
-{% for category,posts in site.categories %}
-Category: {{site.categories[category]}}
+Tags:
+{% for posts in site.categories %}
 
-{% for post in posts %}
-Post:
-{{post.title}}
-{% endfor %}
+  {% for post in posts %}
+   <p>{{post.title}}</p>
+  {% endfor %}
 
-<p></p>
 {% endfor %}
