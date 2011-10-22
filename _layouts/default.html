@@ -105,8 +105,11 @@
 				<li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
 			{% endfor %}
 			</ul>
-			Tag Cloud: {{ tag_cloud }}
-          </div>
+			Tags: 
+			{% for tag in site.tags %}
+			  {{tag}}
+			{% endfor %}
+        </div>
         </div>
       </div>
 
