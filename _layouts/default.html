@@ -105,14 +105,6 @@
 				<li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
 			{% endfor %}
 			</ul>
-	<!-- site.tags -->
-            <h3>Categories</h3>
-			<ul>
-			{% for category in site.categories %}
-				<li>{{category}}</li>
-			{% endfor %}
-			</ul>
-	
           </div>
         </div>
       </div>
