@@ -8,11 +8,9 @@
        <a href="/{{category | downcase}}.html">{{category}}</a>
       {% endfor %}
     </p>
-
-    <hr />
     
     <div class="entrybody">
       {{ page.content | truncate: 400 }}
     </div>
   </div>
-
+  <hr />
