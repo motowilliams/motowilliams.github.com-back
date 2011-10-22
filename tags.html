@@ -3,6 +3,12 @@ layout: default
 title: Tags
 ---
 Tags:
-{% for tag in site.categories %}
-<a href="/tags/{{tag}}" rel="tag">{{tag}}</a>
+{% for category,posts in site.categories %}
+Category: {{category}}
+
+{% for post in posts %}
+{{post.title}}
+{% endfor %}
+
+<p></p>
 {% endfor %}
