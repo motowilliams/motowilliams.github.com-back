@@ -3,10 +3,6 @@ layout: default
 title: Tags
 ---
 Tags:
-{% for tag in site.tags['honeybadger'] %}
-  {{tag}}
-{% endfor %}
-
-{% for tag in page.categories %}
+{% for tag in site.categories %}
 <a href="/tags/{{tag}}" rel="tag">{{tag}}</a>
 {% endfor %}
