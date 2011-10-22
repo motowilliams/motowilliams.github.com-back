@@ -3,7 +3,7 @@ layout: default
 title: Tags
 ---
 
-{% for category in site.iterable.categories %}
 Category:
-{{category.name}}
+{% for topic in site.iterable.categories %}
+{{ topic.name }}
 {% endfor %}
