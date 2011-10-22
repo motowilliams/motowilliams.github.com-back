@@ -4,8 +4,5 @@ layout: default
 
 <div id="post">
  <h1>{{ page.title | xml_escape }}</h1>
- {% for tag in page.tags %}
-  <h5>{{ tag }}</h5>
- {% endfor %}
 {{ content }}
 </div>
