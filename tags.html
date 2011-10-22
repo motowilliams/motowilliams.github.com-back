@@ -4,7 +4,7 @@ title: Tags
 ---
 
 {% for category,posts in site.categories %}
-Category: {{category}}
+Category: {{site.categories[category]}}
 
 {% for post in posts %}
 Post:
