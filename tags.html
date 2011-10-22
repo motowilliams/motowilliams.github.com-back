@@ -7,3 +7,6 @@ Tags:
   {{tag}}
 {% endfor %}
 
+{% for tag in page.categories %}
+<a href="/tags/{{tag}}" rel="tag">{{tag}}</a>
+{% endfor %}
