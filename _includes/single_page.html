@@ -1,4 +1,3 @@
-<h2 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2> 
   <div class="post post-{{ page.id }}">
 
     <p class="author">
@@ -12,5 +11,6 @@
     <div class="entrybody">
       {{ page.content | truncate: 400 }}
     </div>
+    <a href="{{ page.url }}">Read more ...</a>
   </div>
   <hr />
