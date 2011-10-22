@@ -4,6 +4,6 @@ title: Tags
 ---
 
 {% for tag in site.tags.sort_by {|tag,_| tag.downcase } %}
-  <a href="/{{tag | downcase}}.html">{{tag}}</a>
+  {{tag | downcase}}
 {% endfor %}
 
