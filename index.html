@@ -3,6 +3,10 @@ layout: default
 title: Eric Williams
 ---
 
+{% for page in paginator.posts %}
+  {% include single_page.html %}
+{% endfor %}
+
 {% for post in site.posts %}
   {{ post.content | truncatehtml: 250 }}
 {% endfor %}
