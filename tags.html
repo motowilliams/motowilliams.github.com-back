@@ -1,8 +1,18 @@
 ---
 layout: default
-title: Eric Williams
+title: Tags
 ---
 
-{% for tag in site.tags %}
-  {{ tag }}
-{% endfor %}
+#tags
+
+  =header "Tags"
+
+  - site.tags.sort_by {|tag,_| tag.downcase }.each do |tag,posts|
+    %section.tag
+      %h2.tag{ :id => slug(tag) }=h tag
+      %ul.posts
+        - posts.each do |post|
+          %li
+            %time{ :datetime => post.date.strftime("%Y-%m-%d") }= post.date.strftime('%b %d, %Y')
+            = post_link(post)
+
