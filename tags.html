@@ -3,6 +3,10 @@ layout: default
 title: Tags
 ---
 Tags:
+{% for tag in site.tags['rails'] %}
+  {{tag}}
+{% endfor %}
+
 {% for tag in site %}
   {{tag.downcase}}
 {% endfor %}
