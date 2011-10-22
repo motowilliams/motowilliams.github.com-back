@@ -3,7 +3,7 @@ layout: default
 title: Tags
 ---
 
-{% for tag in site.tags.sort_by {|tag,_| tag.downcase } %}
-  {{tag | downcase}}
+{% for tag in site %}
+  {{tag.downcase}}
 {% endfor %}
 
