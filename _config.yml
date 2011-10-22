@@ -1,2 +1,2 @@
-permalink: /:year/:i_month/:i_day/:title
+permalink: /:title
 paginate: 2
