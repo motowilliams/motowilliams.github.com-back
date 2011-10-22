@@ -3,8 +3,6 @@ layout: default
 title: Eric Williams
 ---
 
-<ul>
-  {% for post in site.posts %}
-    {% page.content | truncatehtml: 500 %}
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+  {% page.content %}
+{% endfor %}
