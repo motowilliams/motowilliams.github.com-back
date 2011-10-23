@@ -1,0 +1,4 @@
+{% for tag in site.posts.tags %}
+{% render 'tagindex' with tag:tag %}
+{% endfor %}
+
