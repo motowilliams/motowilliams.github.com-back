@@ -5,7 +5,7 @@
       Added by {{ page.author }}
       on {{ page.date | date: '%B %d, %Y' }}
       in {% for category in  page.categories %}
-       <a href="/tags/{{category | downcase}}.html">{{category}}</a>
+       <a href="/tags#{{category | downcase}}">{{category}}</a>
       {% endfor %}
     </p>
     
