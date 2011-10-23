@@ -7,3 +7,4 @@ layout: default
 {{ content | replace:"'","&#146;"}}
 {% include taglist.html %}
 </div>
+{% paginator.previous_page %} - {% paginator.next_page %}
