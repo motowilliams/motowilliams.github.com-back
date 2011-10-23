@@ -1,5 +1,6 @@
 ---
 layout: post
+image_root: "/assets/images/"
 title: "LINQPad with Databases"
 author: "Eric Williams"
 categories: [LINQPad, SQLite]
@@ -27,26 +28,26 @@ COMMIT;
 
 <p>Now start up LINQPad and click on the standard Add Connection function.  Here you'll see a few nonstandard options, at least from the typical items you'd expect when you 'add a connection' from most other windows developer tools.</p>
 
-<p><img title="LINQPad_ChooseDataContext" alt="LINQPad_ChooseDataContext" src="/assets/images/LINQPad_ChooseDataContext.png"></p>
+<p><img title="LINQPad_ChooseDataContext" alt="LINQPad_ChooseDataContext" src="{{page.image_root}}LINQPad_ChooseDataContext.png"></p>
 
 <p>If you click on the 'View more drivers...' button you'll find options for other third party LINQPad drivers.  In this case we're looking for the SQlite drivers.</p>
 
-<p><img title="LINQPad_Choose_a_driver" alt="LINQPad_Choose_a_driver" src="/assets/images/LINQPad_Choose_a_driver.png"></p>
+<p><img title="LINQPad_Choose_a_driver" alt="LINQPad_Choose_a_driver" src="{{page.image_root}}LINQPad_Choose_a_driver.png"></p>
 
 <p>The driver install for the SQLite driver was pretty slick and seem less and you'll end up with a third item in 'Build data context automatically' section.  Select the IQ driver and the SQLite provider and the location of the SQLite database created earlier.</p>
 
-<p><img title="LINQPad_ChooseDataContext_SQLLite_Driver" alt="LINQPad_ChooseDataContext_SQLLite_Driver" src="/assets/images/LINQPad_ChooseDataContext_SQLLite_Driver.png"></p>
+<p><img title="LINQPad_ChooseDataContext_SQLLite_Driver" alt="LINQPad_ChooseDataContext_SQLLite_Driver" src="{{page.image_root}}LINQPad_ChooseDataContext_SQLLite_Driver.png"></p>
 
 <p>Now you have an available connection to execute queries against.  For the Visual Studio inclined this is the Server Explorer idea.</p>
 
-<p><img title="LINQPad_Current_Connections" alt="LINQPad_Current_Connections" src="/assets/images/LINQPad_Current_Connections.png"></p>
+<p><img title="LINQPad_Current_Connections" alt="LINQPad_Current_Connections" src="{{page.image_root}}LINQPad_Current_Connections.png"></p>
 
 <p>Now for a couple of simple queries.  The first one if probably the simplest query you could do.  Selecting everything.  Notice the handy output display it gives you.</p>
 
-<p><img title="LINQPad_Simple_LINQ_QueryAll" alt="LINQPad_Simple_LINQ_QueryAll" src="/assets/images/LINQPad_Simple_LINQ_QueryAll.png"></p>
+<p><img title="LINQPad_Simple_LINQ_QueryAll" alt="LINQPad_Simple_LINQ_QueryAll" src="{{page.image_root}}LINQPad_Simple_LINQ_QueryAll.png"></p>
 
 <p>And this one has a simple filter to show how you can limit the data you want to return.  Nothing but the serious folks listed here and also notice the SQL tab is selected to show you the SQL that is being executed against the given database.</p>
 
-<p><img title="LINQPad_Simple_LINQ_Query_With_Where_Clause" alt="LINQPad_Simple_LINQ_Query_With_Where_Clause" src="/assets/images/LINQPad_Simple_LINQ_Query_With_Where_Clause.png"></p>
+<p><img title="LINQPad_Simple_LINQ_Query_With_Where_Clause" alt="LINQPad_Simple_LINQ_Query_With_Where_Clause" src="{{page.image_root}}LINQPad_Simple_LINQ_Query_With_Where_Clause.png"></p>
 
 <p>Hopefully this will give you enough of a taste to want to try it out for yourself.</p>

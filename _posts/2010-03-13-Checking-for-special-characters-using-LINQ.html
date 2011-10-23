@@ -1,11 +1,12 @@
 ---
 layout: post
+image_root: "/assets/images/"
 title: "Checking for special characters using LINQ"
 author: "Eric Williams"
 categories: []
 ---
 
-<p><img class="imagefloatleft" title="wussy" src="/assets/images/wussy.png" alt="wussy" width="240" height="82"></p>
+<p><img class="imagefloatleft" title="wussy" src="{{page.image_root}}wussy.png" alt="wussy" width="240" height="82"></p>
 <p>Why on earth am I posting this?&nbsp; For the simple reason of hoping if I take the time to put it down on "paper" that I will never have a need to use such a thing again.&nbsp; Call it superstition.</p>
 <p>Here is some specific background of why this came about.&nbsp; A scenario came up where I was migrating some test data from one platform to another.&nbsp; Some of the source data was encrypted (even in test system) and for my destination system I didn't care about that data anyway.&nbsp; If I came across any of that encrypted information and would just put blanks in the destination.&nbsp; So in short if a string has special characters, nuke the data and write an empty string.</p>
 <p>For what ever reason I wasn't in a Regex mood and looked at LINQ for a solution.&nbsp; Plus it is migration code so who really cares how optimal it is.</p>
