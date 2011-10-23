@@ -1,0 +1,524 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>MotoWilliams</title>
+	
+	<link>http://www.motowilliams.com</link>
+	<description>I'm Trying, Honestly I Am...</description>
+	<lastBuildDate>Mon, 07 Jun 2010 01:48:39 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.1</generator>
+		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/Motowilliams" /><feedburner:info uri="motowilliams" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><item>
+		<title>Internet Explorer is like…</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/Z1C6Bceg04I/</link>
+		<comments>http://www.motowilliams.com/internet-explorer-is-like/#comments</comments>
+		<pubDate>Mon, 07 Jun 2010 01:48:36 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/internet-explorer-is-like/</guid>
+		<description><![CDATA[Internet Explorer is like Wal-Mart, nobody likes it but it is very difficult to avoid.]]></description>
+			<content:encoded><![CDATA[<p>Internet Explorer is like Wal-Mart, nobody likes it but it is very difficult to avoid.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/internet-explorer-is-like/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/internet-explorer-is-like/</feedburner:origLink></item>
+		<item>
+		<title>I Quit My Job And We Are Moving Home To Montana</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/c-ORYn-l6Cs/</link>
+		<comments>http://www.motowilliams.com/i-quit-my-job-and-we-are-moving-home-to-montana/#comments</comments>
+		<pubDate>Thu, 06 May 2010 04:54:36 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[musings]]></category>
+		<category><![CDATA[tech]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/?p=133</guid>
+		<description><![CDATA[Today I gave my two weeks notice at the place I called home for what would have been 9 years in November. A small natural gas utility in Portland Oregon called NW Natural. Lots of good memories there and I learned at lot from a lot of very smart and talented people there. As a [...]]]></description>
+			<content:encoded><![CDATA[<p>Today I gave my two weeks notice at the place I called home for what would have been 9 years in November.  A small natural gas utility in Portland Oregon called NW Natural.  Lots of good memories there and I learned at lot from a lot of very smart and talented people there.  As a software developer I think I probably should have tried to exist stage right a few years ago but about that time I should have been doing that I met my wife and had three kids.  This was the classical enterprise in every sense of the word and my transition to the new company is going to be quite the change for me.  I&#8217;m going from &#8216;customer&#8217; of the contracting firm to the &#8216;contracting&#8217; firm itself.</p>
+<p><a href="http://intralogix.biz/" target="_blank"></a><a href="http://www.whocanhelp.com/" target="_blank"><img class="imagefloatright" title="Who Can Help" src="http://www.motowilliams.com/wp-content/uploads/2010/05/WhoCanHelpLogo.png" alt="Who Can Help" /></a></p>
+<p>With the help of twitter (wow, soak that in for a minute) I&#8217;ve made some networking connections with some folks back home.  The single person instrumental in getting my family and I heading due east is Doug Odegaard <a href="http://twitter.com/dodegaard" target="_blank">@dodegaard</a> from <a href="http://intralogix.biz/" target="_blank">intraLogix</a> and <a href="http://www.whocanhelp.com/" target="_blank">Who Can Help</a>.</p>
+<p>That all so familiar story of developers getting connected on Twitter that we all know, turned into some Skype calls from time to time and having leads on positions in Montana sent my way.  Just like you find your car keys in the last place you look &#8211; a recomendation from Doug turned into a first, second, third and fourth interview which left me with accepting a position as a <a href="http://en.wikipedia.org/wiki/Geospatial" target="_blank">Geospatial</a> Developer at <a title="Your Data.  Smarter" href="http://www.gcs-research.com/" target="_blank">GCS Research</a> in <a href="http://en.wikipedia.org/wiki/Missoula,_Montana" target="_blank">Missoula Montana</a>.</p>
+<p><a title="Your Data.  Smarter" href="http://www.gcs-research.com/" target="_blank"><img class="imagefloatleft" title="GCS Research" src="http://www.motowilliams.com/wp-content/uploads/2010/05/GCSLogo.png" alt="GCS Research" /></a></p>
+<p>I&#8217;m pretty exited about the new adventures ahead of me.  Not working on the same systems year in and year out.  Mostly greenfield apps and getting all-chips-in on the ESRI .NET stack with some smart, web and mobile clients.</p>
+<p>Now onto the small challenge of selling the house, packing up the wife, kids, dog and cat, moving 600 miles, finding a new place to live and &#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/i-quit-my-job-and-we-are-moving-home-to-montana/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/i-quit-my-job-and-we-are-moving-home-to-montana/</feedburner:origLink></item>
+		<item>
+		<title>LINQPad with Databases</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/81C-O2kHcgo/</link>
+		<comments>http://www.motowilliams.com/linqpad-with-databases/#comments</comments>
+		<pubDate>Sat, 17 Apr 2010 21:48:11 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[tech]]></category>
+		<category><![CDATA[LINQPad]]></category>
+		<category><![CDATA[SQLite]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/?p=22</guid>
+		<description><![CDATA[LINQPad is a fantastic free utility from author and C# guru Joesph Albahari. Per the tag line on the LINQPad site &#8220;Kiss goodbye to SQL Management Studio!&#8221; and I would suggest that if you are a SQL Server Management Studio user and also interested in LINQ that you take the LINQPad Replacement Challenge! I didn&#8217;t [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.linqpad.net/">LINQPad</a> is a fantastic free utility from author and C# guru <a href="http://www.albahari.com/">Joesph Albahari</a>.  Per the tag line on the LINQPad site </strong>&#8220;Kiss goodbye to SQL Management Studio!&#8221;</strong> and I would suggest that if you are a SQL Server Management Studio user and also interested in LINQ that you take the <a href="http://www.linqpad.net/Challenge.aspx">LINQPad Replacement Challenge</a>!</p>
+<p>I didn&#8217;t even know about LINQPad until a few years ago when I got the (then 3.0) <a href="http://www.albahari.com/nutshell/">C# 4.0 in a Nutshell</a> book.  It is one of those companion applications that plays a role in the book text and one of the important hooks between the book and the application is that when you registered your copy of the book with the site you received a code that enabled <a href="http://www.linqpad.net/Purchase.aspx">Autocompletion</a>.  Not sure if that is still an option or not.</p>
+<p>So what the heck is it already?  Well LINQPad is many things.  It is an application that will allow you to run LINQ queries against a number of things, Objects, LINQ to SQL, Entity Framework, XML, WCF Data Services (OData), SQLite and MySQL as well as a few others.  It has the <a href="http://www.sliver.com/dotnet/SnippetCompiler">Snippet Compiler</a> feel where you can write a couple of lines of code and F5 it to see what it does.  All around a good LINQ-to-* learning tool.</p>
+<p>So show me the code already.</p>
+<p>First we need a data store to hook up to LINQPad.  Let&#8217;s have a little taste of <a href="http://www.sqlite.org">SQLite</a> for some sample data.  I&#8217;ve download a local copy of SQLite and stubbed up a simple database called <strong>MyDatabase.db</strong>.  SQLite has a command line syntax that you can look into.  For the point of this post I started SQLite and used the .Read function and supplied a external file name with the contents of the file below.</p>
+<pre class="brush: sql; title: ;">
+BEGIN TRANSACTION;
+CREATE TABLE People (Id INTEGER PRIMARY KEY, FirstName varchar(25), LastName varchar(50), JokerRating int);
+INSERT INTO People VALUES(1,'Chuck','Norris',0);
+INSERT INTO People VALUES(2,'Clint','Eastwood',0);
+INSERT INTO People VALUES(3,'Pauly','Shore',1);
+INSERT INTO People VALUES(4,'Eric','Williams',2);
+COMMIT;
+</pre>
+<p>Now start up LINQPad and click on the standard Add Connection function.  Here you&#8217;ll see a few nonstandard options, at least from the typical items you&#8217;d expect when you &#8216;add a connection&#8217; from most other windows developer tools.</p>
+<p><img title="LINQPad_ChooseDataContext" alt="LINQPad_ChooseDataContext" src="http://www.motowilliams.com/wp-content/uploads/2010/04/LINQPad_ChooseDataContext.png"/></p>
+<p>If you click on the &#8216;View more drivers&#8230;&#8217; button you&#8217;ll find options for other third party LINQPad drivers.  In this case we&#8217;re looking for the SQlite drivers.</p>
+<p><img title="LINQPad_Choose_a_driver" alt="LINQPad_Choose_a_driver" src="http://www.motowilliams.com/wp-content/uploads/2010/04/LINQPad_Choose_a_driver.png"/></p>
+<p>The driver install for the SQLite driver was pretty slick and seem less and you&#8217;ll end up with a third item in &#8216;Build data context automatically&#8217; section.  Select the IQ driver and the SQLite provider and the location of the SQLite database created earlier.</p>
+<p><img title="LINQPad_ChooseDataContext_SQLLite_Driver" alt="LINQPad_ChooseDataContext_SQLLite_Driver" src="http://www.motowilliams.com/wp-content/uploads/2010/04/LINQPad_ChooseDataContext_SQLLite_Driver.png"/></p>
+<p>Now you have an available connection to execute queries against.  For the Visual Studio inclined this is the Server Explorer idea.</p>
+<p><img title="LINQPad_Current_Connections" alt="LINQPad_Current_Connections" src="http://www.motowilliams.com/wp-content/uploads/2010/04/LINQPad_Current_Connections.png"/></p>
+<p>Now for a couple of simple queries.  The first one if probably the simplest query you could do.  Selecting everything.  Notice the handy output display it gives you.</p>
+<p><img title="LINQPad_Simple_LINQ_QueryAll" alt="LINQPad_Simple_LINQ_QueryAll" src="http://www.motowilliams.com/wp-content/uploads/2010/04/LINQPad_Simple_LINQ_QueryAll.png"/></p>
+<p>And this one has a simple filter to show how you can limit the data you want to return.  Nothing but the serious folks listed here and also notice the SQL tab is selected to show you the SQL that is being executed against the given database.</p>
+<p><img title="LINQPad_Simple_LINQ_Query_With_Where_Clause" alt="LINQPad_Simple_LINQ_Query_With_Where_Clause" src="http://www.motowilliams.com/wp-content/uploads/2010/04/LINQPad_Simple_LINQ_Query_With_Where_Clause.png"/></p>
+<p>Hopefully this will give you enough of a taste to want to try it out for yourself.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/linqpad-with-databases/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/linqpad-with-databases/</feedburner:origLink></item>
+		<item>
+		<title>Stupid Linq Tricks: Record Rollup</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/OPEzXFANRYo/</link>
+		<comments>http://www.motowilliams.com/stupid-linq-tricks-record-rollup/#comments</comments>
+		<pubDate>Thu, 01 Apr 2010 03:39:36 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[tech]]></category>
+		<category><![CDATA[Linq]]></category>
+		<category><![CDATA[So Eric Remembers]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/?p=108</guid>
+		<description><![CDATA[I&#8217;ve been in these situations too many times where I&#8217;ve had to receive a logical document and the &#8220;text&#8221; has been split across multiple items in a list. Most of the time it occurs with databases but I&#8217;ve had to do the same thing with B2B integrations with Xml too. Before Linq I&#8217;d end up [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been in these situations too many times where I&#8217;ve had to receive a logical document and the &#8220;text&#8221; has been split across multiple items in a list.  Most of the time it occurs with databases but I&#8217;ve had to do the same thing with B2B integrations with Xml too.</p>
+<p>Before Linq I&#8217;d end up with the prototypical <em>foreach</em> code but this last time I need to (re)solve such a problem Linq had since been born.</p>
+<p>Here is an example:</p>
+<pre class="brush: csharp; title: ;">
+//Source object where depending on the length of the text
+public class RawRecords
+{
+  public int Id { get; set; }
+  public int Sequence { get; set; }
+  public DateTime Timestamp { get; set; }
+  public string Comment { get; set; }
+}
+</pre>
+<pre class="brush: csharp; title: ;">
+//Destination object where you want the multiple comment lines to be rolled up into the destination CommentText property.
+public class Comment
+{
+  public int CommentId { get; set; }
+  public DateTime CommentTimestamp { get; set; }
+  public string CommentText { get; set; }
+}
+</pre>
+<pre class="brush: csharp; title: ;">
+[TestMethod]
+public void single_comment_rollup()
+{
+    IEnumerable&lt;RawRecords&gt; rawRecords = GetSampleRow();
+    const string EXPECTED = &quot;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.&quot;;
+
+    var actualComment = new Comment
+    {
+        CommentId = rawRecords.First().Id,
+        CommentTimestamp = rawRecords.First().Timestamp,
+        CommentText = string.Join(&quot;&quot;, rawRecords.OrderBy(ord =&gt; ord.Sequence).Select(x =&gt; x.Comment))
+    };
+
+    Assert.AreEqual(EXPECTED, actualComment.CommentText);
+}
+</pre>
+<p>Big deal.  What if you have a set of data that has multiple comments</p>
+<pre class="brush: csharp; title: ;">
+[TestMethod]
+public void multiple_comment_rollup()
+{
+    IEnumerable&lt;RawRecords&gt; rawRecords = GetSampleRows();
+    const string EXPECTED_COMMENT_42 = &quot;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.&quot;;
+    const string EXPECTED_COMMENT_69 = &quot;Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.&quot;;
+
+    IEnumerable&lt;Comment&gt; actualComments =
+        from ncr in rawRecords
+        group ncr by new { ncr.Id, ncr.Timestamp }
+        into g
+        select new Comment
+        {
+            CommentId = g.Key.Id,
+            CommentTimestamp = g.Key.Timestamp,
+            CommentText = string.Join(&quot;&quot;, g.OrderBy(x =&gt; x.Sequence).Select(x =&gt; x.Comment))
+        };
+
+    //If you have multiple asserts in your normal tests, well you know what will happen
+    Assert.AreEqual(EXPECTED_COMMENT_42, actualComments.Single(x =&gt; x.CommentId == 42).CommentText);
+    Assert.AreEqual(EXPECTED_COMMENT_69, actualComments.Single(x =&gt; x.CommentId == 69).CommentText);
+}
+</pre>
+<p>Here are the static helper methods I used to kruft up some sample data if you would like to play around with these queries</p>
+<pre class="brush: csharp; title: ;">
+private static IEnumerable&lt;RawRecords&gt; GetSampleRow()
+{
+    var timestamp1 = new DateTime(2010, 3, 12);
+    return new List&lt;RawRecords&gt;
+               {
+                   new RawRecords { Sequence = 4, Id = 42,  Timestamp = timestamp1, Comment = &quot;et malesuada fames &quot; },
+                   new RawRecords { Sequence = 1, Id = 42,  Timestamp = timestamp1, Comment = &quot;Pellentesque habitant &quot; },
+                   new RawRecords { Sequence = 3, Id = 42,  Timestamp = timestamp1, Comment = &quot;senectus et netus &quot; },
+                   new RawRecords { Sequence = 5, Id = 42,  Timestamp = timestamp1, Comment = &quot;ac turpis egestas.&quot; },
+                   new RawRecords { Sequence = 2, Id = 42,  Timestamp = timestamp1, Comment = &quot;morbi tristique &quot; },
+               };
+}
+
+private static IEnumerable&lt;RawRecords&gt; GetSampleRows()
+{
+    var timestamp1 = new DateTime(2010, 3, 12);
+    var timestamp2 = new DateTime(2010, 3, 13);
+    return new List&lt;RawRecords&gt;
+               {
+                   new RawRecords { Sequence = 4, Id = 42,  Timestamp = timestamp1, Comment = &quot;et malesuada fames &quot; },
+                   new RawRecords { Sequence = 3, Id = 42,  Timestamp = timestamp1, Comment = &quot;senectus et netus &quot; },
+                   new RawRecords { Sequence = 4, Id = 69,  Timestamp = timestamp2, Comment = &quot;ante.&quot; },
+                   new RawRecords { Sequence = 2, Id = 42,  Timestamp = timestamp1, Comment = &quot;morbi tristique &quot; },
+                   new RawRecords { Sequence = 1, Id = 42,  Timestamp = timestamp1, Comment = &quot;Pellentesque habitant &quot; },
+                   new RawRecords { Sequence = 1, Id = 69,  Timestamp = timestamp2, Comment = &quot;Vestibulum tortor quam, &quot; },
+                   new RawRecords { Sequence = 2, Id = 69,  Timestamp = timestamp2, Comment = &quot;feugiat vitae, ultricies &quot; },
+                   new RawRecords { Sequence = 3, Id = 69,  Timestamp = timestamp2, Comment = &quot;eget, tempor sit amet, &quot; },
+                   new RawRecords { Sequence = 5, Id = 42,  Timestamp = timestamp1, Comment = &quot;ac turpis egestas.&quot; },
+               };
+}
+</pre>
+<p>I do realized that ORM and other database queries have the ability to do these aggregates for you.  I was merely trying to point out some Linq tricks for those situations where you are dealing with objects and might not be in a data access situation.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/stupid-linq-tricks-record-rollup/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/stupid-linq-tricks-record-rollup/</feedburner:origLink></item>
+		<item>
+		<title>Getting started with MVCContrib: Filters</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/W8ocpZzotHI/</link>
+		<comments>http://www.motowilliams.com/getting-started-with-mvccontrib-filters/#comments</comments>
+		<pubDate>Tue, 30 Mar 2010 09:12:24 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[tech]]></category>
+		<category><![CDATA[ActionFilters]]></category>
+		<category><![CDATA[Asp.Net MVC]]></category>
+		<category><![CDATA[MVCContrib]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/?p=45</guid>
+		<description><![CDATA[What is MVCContrib?&#160; MVCContrib is a open source project was designed to add functionality and ease-of-use to the out of the box experience of the ASP.NET MVC Framework.&#160; It kicks in where MVC on its own has left off.&#160; MVCContrib is hosted on CodePlex at http://mvccontrib.codeplex.com and it also a CodePlex Foundation Project. In this [...]]]></description>
+			<content:encoded><![CDATA[<p>What is MVCContrib?&#160; MVCContrib is a open source project was designed to add functionality and ease-of-use to the out of the box experience of the ASP.NET MVC Framework.&#160; It kicks in where MVC on its own has left off.&#160; MVCContrib is hosted on CodePlex at <a href="http://mvccontrib.codeplex.com">http://mvccontrib.codeplex.com</a> and it also a <a href="http://codeplex.org/Galleries/ASPNETOpenSourceGallery/MVCContrib.aspx" target="_blank">CodePlex Foundation Project</a>.</p>
+<p>In this post I’m going to cover a couple of the Action Filters that are included with MVCContrib, <strong>ModelStateToTempData</strong> and <strong>PassParametersDuringRedirect</strong>.</p>
+<h4>ModelStateToTempData</h4>
+<p>When you have this filter decorating your action method (or at the controller level) you will get a behavior in which that when model state gets created post model binding you might have a state in which you want available to another action method.&#160; This happens when you are practicing the <a href="http://en.wikipedia.org/wiki/Post/Redirect/Get" target="_blank">Post-Redirect-Get Pattern (PRG)</a>.</p>
+<p>Let’s say you have a CustomerEditModel that coming from a web form.&#160; You need a Post Action that takes in a CustomerEditModel and out of the box that DataAnnotations will engage and validate your model.&#160; Below is a model with two attributes, Required and DisplayName.&#160; <a href="http://bradwilson.typepad.com/blog/2010/01/input-validation-vs-model-validation-in-aspnet-mvc.html" target="_blank">Required may or may not be what you think it means</a> and DisplayName gives you an opportunity to give your labels a different name than from the reflected property type name when using the <a href="http://bradwilson.typepad.com/blog/2009/10/aspnet-mvc-2-templates-part-1-introduction.html" target="_blank">template helpers (go read Brad’s series now).</a></p>
+<pre class="brush: csharp; title: ;">
+public class CustomerEditModel
+{
+  [Required]
+  [DisplayName(&quot;First Name&quot;)]
+  public string FirstName { get; set; }
+
+  [Required]
+  [DisplayName(&quot;Last Name&quot;)]
+  public string LastName { get; set; }
+}
+
+[HttpPost]
+public ActionResult CreateCustomer(CustomerEditModel customerEditModel)
+{
+  if (ModelState.IsValid)
+  {
+    //Do Something Worthy of your NEW Customer
+    return RedirectToAction(&quot;Success&quot;);
+  }
+  return RedirectToAction(&quot;FixErrors&quot;);
+}
+
+[HttpGet]
+public ActionResult FixErrors()
+{
+  return View(&quot;Index&quot;);
+}
+</pre>
+<p>Ok back to the story. When you submitted a nice clean valid model and you flow into the ModelState.IsValid block life is good. When you had some validation issues and you flow to the FixErrors RedirectToAction something particular needs to happen. ModelState has some your validation results that you will want to use to display validation hints back to your end users. The problem is that ModelState isn’t carried over, without any intervention to the next Action method being called.</p>
+<h5>Enter the ModelStateToTempData Attribute</h5>
+<p>Add a [ModelStateToTempData] to the action method that the modelstate is being generated from, let&#8217;s call it the sender, AND the action method that needs to use it, maybe call it the reciever?</p>
+<pre class="brush: csharp; title: ;">
+[HttpPost]
+[ModelStateToTempData]
+public ActionResult CreateCustomer(CustomerEditModel customerEditModel)
+{
+  if (ModelState.IsValid)
+  {
+    //Do Something Worthy of your NEW Customer
+    return RedirectToAction(&quot;Success&quot;);
+  }
+  return RedirectToAction(&quot;FixErrors&quot;);
+}
+
+[HttpGet]
+[ModelStateToTempData]
+public ActionResult FixErrors()
+{
+  return View(&quot;Index&quot;);
+}</pre>
+<p>What&#8217;s happening on the sending side with these attributes is when a RedirectToRouteResult is returned from an action (in this case we&#8217;re using RedirectToAction) any data that is the ModelState dictionary will be copied into TempData &#8211; A.U.T.O.M.A.T.I.C.A.L.L.Y. You don&#8217;t have to manually do it yourself!</p>
+<p><img class="imagefloatleft" src="http://www.motowilliams.com/wp-content/uploads/2010/03/SimpleValidationError.png"/></p>
+<p>What&#8217;s happening on the receiving side with these attributes is when a ViewResultBase is returned from an action (in this case we&#8217;re using View) all the data that was previously put into TempData is copied out of TempData and put back into ModelState</p>
+<p>In this case since we&#8217;re in the FixErrors action the errors that we just got back from the [ModelStateToTempData] attribute will be displayed on the user form. Additionally we&#8217;re also getting back the values of the &quot;bad submission&quot; from the end user so that for non-trivial (or really any) forms they don&#8217;t have to re-enter their data.</p>
+<h4>PassParametersDuringRedirect</h4>
+<p>Since we live in a perfect world and our information management is so well done that our users get all the forms filled out perfectly that that always drop into the ModelState.IsValid block every time. Maybe we can just render the view from there &#8230; NO! My post, my rules. Thou shalt not render view from Post Methods. We have to PRG our way out of there. In this case we&#8217;d do something interesting with some persistence and then we&#8217;ll take the user to a &#8216;You Are <a href="http://www.urbandictionary.com/define.php?term=teh" target="_blank">Teh</a> <a href="http://www.tehawesome.net/" target="_blank">Awesome</a>&#8216; page.</p>
+<p>Let&#8217;s take the same controller action methods but add one more attribute to them, [PassParametersDuringRedirect]</p>
+<pre class="brush: csharp; title: ;">
+[HttpPost]
+[ModelStateToTempData]
+[PassParametersDuringRedirect]
+public ActionResult CreateCustomer(CustomerEditModel customerEditModel)
+{
+  if (ModelState.IsValid)
+  {
+    //Do Something Worthy of your NEW Customer
+    return this.RedirectToAction(x =&gt; x.Success(customerEditModel));
+  }
+  return RedirectToAction(&quot;FixErrors&quot;);
+}
+
+[HttpGet]
+[PassParametersDuringRedirect]
+public ActionResult Success(CustomerEditModel customerEditModel)
+{
+  return View(customerEditModel);
+}
+</pre>
+<p>I&#8217;d like to point out that the difference between the two RedirectToAction call in the CreateCustomer Action Method.  The second one, the one that ships with Asp.NET MVC and the first one has the nice expression in there.  This is another nugget that comes with MVCContrib.  This flavor of the RedirectToAction extension method will take in a an expression and make sure that the destination method will have the correct parameters passed to it.</p>
+<p>The new attribute added to the methods, [PassParametersDuringRedirect] is bringing some more pleasant PRG stuff to the controller.  After the valid customer has been &#8216;persisted&#8217; we want to show the user a Sucess page.  In this case we want to show the model (or maybe another model with additional information) thus the method signature as so <strong>public ActionResult Success(CustomerEditModel customerEditModel)</strong>.  This is very similar to the [ModelStateToTempData] behaviour.</p>
+<p>I hope this information has helped.  Just until very recently I didn&#8217;t know these things were in the MVCContrib project and now I have some code to delete from our current code base.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/getting-started-with-mvccontrib-filters/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/getting-started-with-mvccontrib-filters/</feedburner:origLink></item>
+		<item>
+		<title>Extension Methods:  Improving the quality of Life</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/pAhfxLI3R58/</link>
+		<comments>http://www.motowilliams.com/extension-methods-improving-the-quality-of-life/#comments</comments>
+		<pubDate>Tue, 23 Mar 2010 07:25:22 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[tech]]></category>
+		<category><![CDATA[Asp.Net MVC]]></category>
+		<category><![CDATA[Continuous Improvement]]></category>
+		<category><![CDATA[Extension Methods]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/?p=81</guid>
+		<description><![CDATA[Extension methods, such a simple idea that can totally make the small things in your application or at least the un-DRY portions of it cleaner. AddModelError and Multiple ValidationResults Here is a simple example (taken from a custom model binder): foreach( var validationResult in validationResults ) { bindingContext.ModelState .AddModelError( validationResult.MemberNames.FirstOrDefault(), validationResult.ErrorMessage ); } not too bad, but when working in [...]]]></description>
+			<content:encoded><![CDATA[<p><img class="imagefloatright" src="http://www.motowilliams.com/wp-content/uploads/2010/03/checkmark.png" alt="" /><br />
+Extension methods, such a simple idea that can totally make the small things in your application or at least the un-<a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself" target="_blank">DRY</a> portions of it cleaner.</p>
+<h5>AddModelError and Multiple ValidationResults</h5>
+<p>Here is a simple example (taken from a custom model binder):</p>
+<div style="width:600px;">
+<pre class="brush: csharp; title: ;">foreach( var validationResult in validationResults )
+{
+  bindingContext.ModelState
+    .AddModelError( validationResult.MemberNames.FirstOrDefault(), validationResult.ErrorMessage );
+}</pre>
+</div>
+<p>not too bad, but when working in a block of code where you might have a few instances of it you tend to see the noise a little bit.</p>
+<p>How about a little reduction and also centralize some logic so your entire code base can leverage it?</p>
+<pre class="brush: csharp; title: ;">bindingContext.ModelState.AddModelErrors(validationResults);</pre>
+<p>Now that everything you thought was upright in the world is all in question, ok, not really &#8211; not even close.  In fact we&#8217;ve only saved three lines of code where such things are being used but I would argue if you try to keep small things like this in mind that over time your code base will start to reap the benefits.</p>
+<p>Here is how I implemented the extension method.  Your mileage may vary.</p>
+<pre class="brush: csharp; title: ;">
+public static class ModelStateExtensions
+{
+    public static void AddModelErrors(this ModelStateDictionary values, IEnumerable&lt;ValidationResult&gt; validationResults)
+    {
+        foreach (var validationResult in validationResults)
+            values.AddModelError(validationResult.MemberNames.FirstOrDefault(), validationResult.ErrorMessage);
+    }
+}
+</pre>
+<h5>DataAnnotations and the Validator class</h5>
+<p>Another area that might not be Asp.net MVC specific is if you are using the DataAnnotaions directly on your models and you use the static Validator class to validation the model.  In this case the TryValidateObject is being used for the bool that is returned from the operation.</p>
+<pre class="brush: csharp; title: ;">
+ValidationContext validationContext = new ValidationContext( someEditModel, null, null );
+List&lt;ValidationResult&gt; validationResults = new List&lt;ValidationResult&gt;();
+bool isValid = Validator.TryValidateObject( someEditModel, validationContext, validationResults );
+if( !isValid )
+{
+  //do something maybe ...
+  bindingContext.ModelState.AddModelErrors(validationResults);
+}
+</pre>
+<p>I think I prefer this a little more</p>
+<pre class="brush: csharp; title: ;">
+List&lt;ValidationResult&gt; validationResults = someEditModel.ValidateAnnotations();
+if( validationResults.Count() &gt; 0 )
+  bindingContext.ModelState.AddModelErrors(validationResults);
+</pre>
+<p>Where ValidateAnnotations is implemented as follows.  Also you if you prefer to change the where this can be used you can change the accessibility or change what this method extends to limit it&#8217;s exposure.</p>
+<pre class="brush: csharp; title: ;">
+public static class ValidationExtensions
+{
+    public static List&lt;ValidationResult&gt; ValidateAnnotations&lt;T&gt;(this T value) where T : class
+    {
+        if(value == null) return new List&lt;ValidationResult&gt;();
+
+        var validationContext = new ValidationContext(value, null, null);
+        var validationResults = new List&lt;ValidationResult&gt;();
+        Validator.TryValidateObject(value, validationContext, validationResults, true);
+        return validationResults;
+    }
+}
+</pre>
+<p>Hopefully these two little nuggets will help someone out.  Both of these are just a means to end, where I think that end is a transformation to a code base even beyond simple changes like this.  After all it is all about the journey not the destination.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/extension-methods-improving-the-quality-of-life/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/extension-methods-improving-the-quality-of-life/</feedburner:origLink></item>
+		<item>
+		<title>C4MVC:  Reason #42 to Join</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/VEf0LNJZhAo/</link>
+		<comments>http://www.motowilliams.com/c4mvc-reason-42-to-join/#comments</comments>
+		<pubDate>Mon, 22 Mar 2010 05:19:15 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[tech]]></category>
+		<category><![CDATA[Asp.Net MVC]]></category>
+		<category><![CDATA[Continuous Improvement]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/?p=64</guid>
+		<description><![CDATA[What is C4MVC?  Well per the about us page it is: Our Vision is to share knowledge and best practices around using the framework, as well as encourage community contributions that serve the greater good. Through interactive sessions, projects, and aggregated blog feeds we hope to provide: A way for new developers to use the [...]]]></description>
+			<content:encoded><![CDATA[<p><img class="imagefloatright" src="http://www.motowilliams.com/wp-content/uploads/2010/03/c4mvclogo.png" alt="" /></p>
+<p>What is C4MVC?  Well per the about us page it is:</p>
+<blockquote><p>Our Vision is to share knowledge and best practices around using the framework, as well as encourage community contributions that serve the greater good.</p>
+<p>Through interactive sessions, projects, and aggregated blog feeds we hope to provide:</p>
+<ul>
+<li>A way for new developers to use the framework the right way.</li>
+<li>Techniques and tools to allow experienced developers to develop with less friction.</li>
+<li>A self supporting community.</li>
+</ul>
+</blockquote>
+<p>Per my definition:</p>
+<blockquote><p>A virtual user group on Wednesday mornings where I can listen in on the Asp.Net MVC big guns discuss the topic of the framework that I need to learn better.</p></blockquote>
+<p><img class="imagefloatleft" src="http://www.motowilliams.com/wp-content/uploads/2010/03/somegrenade.png" alt="" /><br />
+Besides the great free content such as last weeks<a href="http://www.c4mvc.net/Home/Events" target="_blank"> Advanced MVC2</a> topic sometimes, just sometimes, you can win some stuff.  In my case, I loves me some 30 day subscription to <a href="http://www.tekpub.com/" target="_blank">TekPub</a> which also happens to have a lengthy <a href="http://www.tekpub.com/preview/aspmvc" target="_blank">Asp.NET MVC series</a>. Now the only problem I have is finding the correct window to pull the pin this content grenade so that I can put together 30 days of <s>face melting guitar solo</s> mind melding content assimilation.  Parent of 3 (4 and under) makes that a <a href="http://www.davidco.com/what_is_gtd.php" target="_blank">GTD</a> challenge.</p>
+<p>The C4MVC.NET (google) group is open to anyone to <a href="http://groups.google.com/group/c4mvc" target="_blank">join</a> so come and <a href="http://groups.google.com/group/c4mvc" target="_blank">join</a> the group to get some good nuggets of Asp.net MVC knowledge on!  No really, <a href="http://groups.google.com/group/c4mvc" target="_blank">join now</a>!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/c4mvc-reason-42-to-join/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/c4mvc-reason-42-to-join/</feedburner:origLink></item>
+		<item>
+		<title>Checking for special characters using LINQ</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/Dnd-Xx-1OTs/</link>
+		<comments>http://www.motowilliams.com/checking-for-special-characters-using-linq/#comments</comments>
+		<pubDate>Sat, 13 Mar 2010 16:53:29 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[tech]]></category>
+		<category><![CDATA[So Eric Remembers]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/?p=36</guid>
+		<description><![CDATA[Why on earth am I posting this?  For the simple reason of hoping if I take the time to put it down on “paper” that I will never have a need to use such a thing again.  Call it superstition. Here is some specific background of why this came about.  A scenario came up where [...]]]></description>
+			<content:encoded><![CDATA[<p><img class="imagefloatleft" title="wussy" src="http://www.motowilliams.com/wp-content/uploads/2010/03/wussy.png" alt="wussy" width="240" height="82"/></p>
+<p>Why on earth am I posting this?  For the simple reason of hoping if I take the time to put it down on “paper” that I will never have a need to use such a thing again.  Call it superstition.</p>
+<p>Here is some specific background of why this came about.  A scenario came up where I was migrating some test data from one platform to another.  Some of the source data was encrypted (even in test system) and for my destination system I didn’t care about that data anyway.  If I came across any of that encrypted information and would just put blanks in the destination.  So in short if a string has special characters, nuke the data and write an empty string.</p>
+<p>For what ever reason I wasn’t in a Regex mood and looked at LINQ for a solution.  Plus it is migration code so who really cares how optimal it is.</p>
+<p>The first two lines of this extension method are something I read about and thought, “neat and when would I ever use it”.  Basically <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.range.aspx" target="_blank">Enumerable.Range</a> will give you a range of of numbers with a starting number and a count.</p>
+<blockquote><p>IEnumerable lowRange = Enumerable.Range(0, 32);</p></blockquote>
+<p>The next albeit messy part takes the input string and converts it to a character array then takes each character and converts it to is ascii code representation.</p>
+<blockquote><p>IEnumerable enumerable = value.ToCharArray().Select(x =&gt; Convert.ToInt32(((int)x).ToString()));</p></blockquote>
+<p>The last bit was even more obscure than the range bit. <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.intersect.aspx" target="_blank">Enumerable.Intersect</a> &#8220;Produces the set intersection of two sequences.&#8221;  If you have two lists, {1,2,3} and {3,4,5} the resultant list will be 3 with a .Count() of 1.</p>
+<pre class="brush: csharp; title: ;">public static class StringExtensions
+{
+  public static bool HasInvalidCharacters(this string value)
+  {
+    //Ascii range between 32 and 127
+    IEnumerable&lt;int&gt; lowRange = Enumerable.Range(0, 32);
+    IEnumerable&lt;int&gt; highRange = Enumerable.Range(128, 128);
+    IEnumerable&lt;int&gt; enumerable = value.ToCharArray().Select(x =&gt; Convert.ToInt32(((int)x).ToString()));
+    return lowRange.Intersect(enumerable).Count() != 0 || highRange.Intersect(enumerable).Count() != 0;
+  }
+}</pre>
+<p>This was may more of a post than I hoped but hopefully someone will find it useful and I&#8217;ll will never have to think about it again!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/checking-for-special-characters-using-linq/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/checking-for-special-characters-using-linq/</feedburner:origLink></item>
+		<item>
+		<title>Asp.net MVC Session State Extension Method</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/6XImWLVB0CA/</link>
+		<comments>http://www.motowilliams.com/asp-net-mvc-session-state-extension-method/#comments</comments>
+		<pubDate>Tue, 09 Mar 2010 08:30:18 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[tech]]></category>
+		<category><![CDATA[Asp.Net MVC]]></category>
+		<category><![CDATA[Extension Methods]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/?p=12</guid>
+		<description><![CDATA[There are a few implementations of the conical wizard out there using Asp.net MVC.  I&#8217;m working on a project where we are needing one such wizard and we&#8217;re trying out using session state, not session skate, to keep the models that make up the larger data set persisted for the user until the final submission. [...]]]></description>
+			<content:encoded><![CDATA[<p>There are a few implementations of the conical wizard out there using Asp.net MVC.  <a href="http://www.sessions.com/" target="_blank"><img class="imagefloatright" title="Sessions" src="http://www.motowilliams.com/wp-content/uploads/2010/03/Sessions.png" alt="Sessions" width="189" height="160" /></a>I&#8217;m working on a project where we are needing one such wizard and we&#8217;re trying out using session state, not session skate, to keep the models that make up the larger data set persisted for the user until the final submission.</p>
+<p>This will allow the user to go back to any of the stages and edit the information if needed.  There are are options but for now we&#8217;re testing driving this approach.</p>
+<p>Inspired (<em>dang near a complete duplicate</em>) by <a href="http://blog.donnfelker.com/2010/02/25/asp-net-mvc-tempdata-extension-methods/" target="_blank">Donn Felker&#8217;s <strong>ASP.NET MVC TempData Extension Methods</strong></a> I created one that uses <a href="http://msdn.microsoft.com/en-us/library/system.web.httpsessionstatebase.aspx" target="_blank">HttpSessionStateBase</a>.</p>
+<p>
+<pre class="brush: csharp; title: ;">
+    public static class SessionStateExtensions
+    {
+        public static void Put&lt;T&gt;(this HttpSessionStateBase httpSession, T value) where T : class
+        {
+            httpSession[typeof (T).FullName] = value;
+        }
+
+        public static void Put&lt;T&gt;(this HttpSessionStateBase httpSession, string key, T value) where T : class
+        {
+            httpSession[typeof (T).FullName + key] = value;
+        }
+
+        public static T Get&lt;T&gt;(this HttpSessionStateBase httpSession) where T : class
+        {
+            var o = (T) httpSession[typeof (T).FullName];
+            return o == null ? null : o;
+        }
+
+        public static T Get&lt;T&gt;(this HttpSessionStateBase httpSession, string key) where T : class
+        {
+            var o = (T) httpSession[typeof (T).FullName + key];
+            return o == null ? null : o;
+        }
+    }
+</pre></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/asp-net-mvc-session-state-extension-method/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/asp-net-mvc-session-state-extension-method/</feedburner:origLink></item>
+		<item>
+		<title>Unit Testing, Just Do It!</title>
+		<link>http://feedproxy.google.com/~r/Motowilliams/~3/aI2MYfWRnqk/</link>
+		<comments>http://www.motowilliams.com/unit-testing-just-do-it/#comments</comments>
+		<pubDate>Mon, 08 Mar 2010 02:27:50 +0000</pubDate>
+		<dc:creator>Eric</dc:creator>
+				<category><![CDATA[tech]]></category>
+		<category><![CDATA[Continuous Improvement]]></category>
+		<category><![CDATA[Unit Testing]]></category>
+
+		<guid isPermaLink="false">http://www.motowilliams.com/unit-testing-just-do-it/</guid>
+		<description><![CDATA[I used to be the ConsoleApplication132 type of developer and no big surprise my projects didn’t have any unit tests in them, if any at all.&#160; To try and remedy this I took a 3 week TestProject1 challenge.&#160; Instead of doing quick spikes to a .NET console application to ‘try something out’ I spun up [...]]]></description>
+			<content:encoded><![CDATA[<p>I used to be the ConsoleApplication132 type of developer and no big surprise my projects didn’t have any unit tests in them, if any at all.&#160; To try and remedy this I took a 3 week TestProject1 challenge.&#160; Instead of doing quick spikes to a .NET console application to ‘try something out’ I spun up a Test Project.</p>
+<p><img class="imagefloatleft" title="bell" alt="bell" src="http://www.motowilliams.com/wp-content/uploads/2010/03/bell.jpg" width="150" height="143" /></p>
+<p>So where am I now?&#160; Well my stuff has tests, but I’m in some bell curve of using Mocks improperly and over specifying my tests.&#160; I really like the naming style of BDD but flirted around with class name test method convention is about as deep as I have got into that realm so far.</p>
+<p>… to be continued … over many years, I’m sure …</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.motowilliams.com/unit-testing-just-do-it/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://www.motowilliams.com/unit-testing-just-do-it/</feedburner:origLink></item>
+	</channel>
+</rss>
