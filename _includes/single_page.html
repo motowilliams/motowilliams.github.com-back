@@ -4,8 +4,8 @@
     <p class="author">
       Added by {{ page.author }}
       on {{ page.date | date: '%B %d, %Y' }}
-      in {% for category in page.categories %}
-       <a href="/tags/{{category | downcase}}.html">{{category}}</a>
+      in {% for tags in page.tags %}
+       <a href="/tags/{{tag | downcase}}.html">{{tag}}</a>
       {% endfor %}
     </p>
     
