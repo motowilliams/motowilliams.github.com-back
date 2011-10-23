@@ -4,13 +4,13 @@ title: Categories
 ---
 
 <ul id="category-list">
-{% for category in site.categories | sort %}
+{% for category in site.categories %}
   <li><a href="#{{ category | first | downcase | slugify }}">{{ category | first }}</a></li>
 {% endfor %}
 </ul>
 
 {% assign first = true %}
-{% for category in site.categories | sort %}
+{% for category in site.categories %}
 	{% unless first == true %}
 	</ul>
 	{% endunless %}
