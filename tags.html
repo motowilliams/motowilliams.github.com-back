@@ -4,7 +4,7 @@ title: Categories
 ---
 
 <ul id="category-list">
-{% for category in site.categories | sort %}
+{% for category in site.categories.sort %}
   <li><a href="#{{ category | first | downcase | slugify }}">{{ category | first }}</a></li>
 {% endfor %}
 </ul>
