@@ -1,6 +1,6 @@
 permalink: /:title
 lsi: false
 paginate: 5
-paginate: tru
+paginate: true
 pygments: true
 pretty_style: html_extension
