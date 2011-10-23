@@ -6,4 +6,7 @@ layout: default
  <h1>{{ page.title | xml_escape }}</h1>
 {{ content | replace:"'","&#146;"}}
 {% include taglist.html %}
+{% for post in site.related_posts %}
+  <a href="{{ post.url }}">{{post.title }}</a><br />
+{% endfor %}
 </div>
