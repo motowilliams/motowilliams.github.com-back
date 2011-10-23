@@ -19,18 +19,6 @@ categories: []
 
 <p>The last bit was even more obscure than the range bit. <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.intersect.aspx" target="_blank">Enumerable.Intersect</a> "Produces the set intersection of two sequences."&nbsp; If you have two lists, {1,2,3} and {3,4,5} the resultant list will be 3 with a .Count() of 1.</p>
 
-{% highlight c# %}
-public static class StringExtensions
-{
-  public static bool HasInvalidCharacters(this string value)
-  {
-    //Ascii range between 32 and 127
-    IEnumerable<int> lowRange = Enumerable.Range(0, 32);
-    IEnumerable<int> highRange = Enumerable.Range(128, 128);
-    IEnumerable<int> enumerable = value.ToCharArray().Select(x => Convert.ToInt32(((int)x).ToString()));
-    return lowRange.Intersect(enumerable).Count() != 0 || highRange.Intersect(enumerable).Count() != 0;
-  }
-}
-{% endhighlight %}
+<script src="https://gist.github.com/1307701.js"> </script>
 
 <p>This was may more of a post than I hoped but hopefully someone will find it useful and I'll will never have to think about it again!</p>
