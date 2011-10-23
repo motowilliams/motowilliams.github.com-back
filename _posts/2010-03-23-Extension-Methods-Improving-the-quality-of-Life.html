@@ -2,32 +2,81 @@
 layout: post
 title: "Extension Methods Improving the quality of Life"
 author: "Eric Williams"
-categories: []
+categories: [Asp.Net MVC, Continuous Improvement, Extension Methods]
 ---
 
-<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+<p><img class="imagefloatright" src="/assets/images/checkmark.png" alt=""><br>
+Extension methods, such a simple idea that can totally make the small things in your application or at least the un-<a href="http://en.wikipedia.org/wiki/Don't_repeat_yourself" target="_blank">DRY</a> portions of it cleaner.</p>
+<h5>AddModelError and Multiple ValidationResults</h5>
+<p>Here is a simple example (taken from a custom model binder):</p>
 
-<h2>Header Level 2</h2>
-	       
-<ol>
-   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-   <li>Aliquam tincidunt mauris eu risus.</li>
-</ol>
-
-<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-<h3>Header Level 3</h3>
-
-<ul>
-   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-   <li>Aliquam tincidunt mauris eu risus.</li>
-</ul>
-
-<pre><code>
-#header h1 a { 
-	display: block; 
-	width: 300px; 
-	height: 80px; 
+<div style="width:600px;">
+{% highlight c# %}
+foreach( var validationResult in validationResults )
+{
+  bindingContext.ModelState
+    .AddModelError( validationResult.MemberNames.FirstOrDefault(), validationResult.ErrorMessage );
 }
-</code></pre>
+{% endhighlight %}
+</div>
 
+<p>not too bad, but when working in a block of code where you might have a few instances of it you tend to see the noise a little bit.</p>
+
+<p>How about a little reduction and also centralize some logic so your entire code base can leverage it?</p>
+{% highlight c# %}
+bindingContext.ModelState.AddModelErrors(validationResults);
+{% endhighlight %}
+
+<p>Now that everything you thought was upright in the world is all in question, ok, not really – not even close.  In fact we’ve only saved three lines of code where such things are being used but I would argue if you try to keep small things like this in mind that over time your code base will start to reap the benefits.</p>
+<p>Here is how I implemented the extension method.  Your mileage may vary.</p>
+
+{% highlight c# %}
+public static class ModelStateExtensions
+{
+    public static void AddModelErrors(this ModelStateDictionary values, IEnumerable<ValidationResult> validationResults)
+    {
+        foreach (var validationResult in validationResults)
+            values.AddModelError(validationResult.MemberNames.FirstOrDefault(), validationResult.ErrorMessage);
+    }
+}
+{% endhighlight %}
+
+<h5>DataAnnotations and the Validator class</h5>
+<p>Another area that might not be Asp.net MVC specific is if you are using the DataAnnotaions directly on your models and you use the static Validator class to validation the model.  In this case the TryValidateObject is being used for the bool that is returned from the operation.</p>
+
+{% highlight c# %}
+ValidationContext validationContext = new ValidationContext( someEditModel, null, null );
+List<ValidationResult> validationResults = new List<ValidationResult>();
+bool isValid = Validator.TryValidateObject( someEditModel, validationContext, validationResults );
+if( !isValid )
+{
+  //do something maybe ...
+  bindingContext.ModelState.AddModelErrors(validationResults);
+}
+{% endhighlight %}
+
+<p>I think I prefer this a little more</p>
+
+{% highlight c# %}
+List<ValidationResult> validationResults = someEditModel.ValidateAnnotations();
+if( validationResults.Count() > 0 )
+  bindingContext.ModelState.AddModelErrors(validationResults);
+{% endhighlight %}
+
+<p>Where ValidateAnnotations is implemented as follows.  Also you if you prefer to change the where this can be used you can change the accessibility or change what this method extends to limit it’s exposure.</p>
+
+{% highlight c# %}
+public static class ValidationExtensions
+{
+    public static List<ValidationResult> ValidateAnnotations<T>(this T value) where T : class
+    {
+        if(value == null) return new List<ValidationResult>();
+ 
+        var validationContext = new ValidationContext(value, null, null);
+        var validationResults = new List<ValidationResult>();
+        Validator.TryValidateObject(value, validationContext, validationResults, true);
+        return validationResults;
+    }
+}{% endhighlight %}
+
+<p>Hopefully these two little nuggets will help someone out.  Both of these are just a means to end, where I think that end is a transformation to a code base even beyond simple changes like this.  After all it is all about the journey not the destination.</p>

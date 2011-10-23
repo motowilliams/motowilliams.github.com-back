@@ -2,32 +2,36 @@
 layout: post
 title: "Asp net MVC Session State Extension Method"
 author: "Eric Williams"
-categories: []
+categories: [Asp.Net MVC, Extension Methods]
 ---
 
-<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+<p>There are a few implementations of the conical wizard out there using Asp.net MVC.&nbsp; <a href="http://www.sessions.com/" target="_blank"><img class="imagefloatright" title="Sessions" src="http://www.motowilliams.com/wp-content/uploads/2010/03/Sessions.png" alt="Sessions" width="189" height="160"></a>I’m working on a project where we are needing one such wizard and we’re trying out using session state, not session skate, to keep the models that make up the larger data set persisted for the user until the final submission.</p>
+<p>This will allow the user to go back to any of the stages and edit the information if needed.&nbsp; There are are options but for now we’re testing driving this approach.</p>
+<p>Inspired (<em>dang near a complete duplicate</em>) by <a href="http://blog.donnfelker.com/2010/02/25/asp-net-mvc-tempdata-extension-methods/" target="_blank">Donn Felker’s <strong>ASP.NET MVC TempData Extension Methods</strong></a> I created one that uses <a href="http://msdn.microsoft.com/en-us/library/system.web.httpsessionstatebase.aspx" target="_blank">HttpSessionStateBase</a>.</p>
 
-<h2>Header Level 2</h2>
-	       
-<ol>
-   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-   <li>Aliquam tincidunt mauris eu risus.</li>
-</ol>
-
-<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-<h3>Header Level 3</h3>
-
-<ul>
-   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-   <li>Aliquam tincidunt mauris eu risus.</li>
-</ul>
-
-<pre><code>
-#header h1 a { 
-	display: block; 
-	width: 300px; 
-	height: 80px; 
+{% highlight c# %}
+public static class SessionStateExtensions
+{
+    public static void Put<T>(this HttpSessionStateBase httpSession, T value) where T : class
+    {
+        httpSession[typeof (T).FullName] = value;
+    }
+ 
+    public static void Put<T>(this HttpSessionStateBase httpSession, string key, T value) where T : class
+    {
+        httpSession[typeof (T).FullName + key] = value;
+    }
+ 
+    public static T Get<T>(this HttpSessionStateBase httpSession) where T : class
+    {
+        var o = (T) httpSession[typeof (T).FullName];
+        return o == null ? null : o;
+    }
+ 
+    public static T Get<T>(this HttpSessionStateBase httpSession, string key) where T : class
+    {
+        var o = (T) httpSession[typeof (T).FullName + key];
+        return o == null ? null : o;
+    }
 }
-</code></pre>
-
+{% endhighlight %}
