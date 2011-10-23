@@ -4,6 +4,7 @@ layout: default
 
 <div id="post">
  <h1>{{ page.title | xml_escape }}</h1>
+ <h5>{{ page.author | xml_escape }}</h5>
 {{ content }}
 {% include taglist.html %}
 </div>
