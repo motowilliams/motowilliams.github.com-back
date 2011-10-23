@@ -6,3 +6,6 @@ title: Eric Williams
 {% for page in paginator.posts %}
   {% include single_page.html %}
 {% endfor %}
+
+<p>previous_page: {% paginator.previous_page %}</p>
+<p>next_page: {% paginator.next_page %}</p>
