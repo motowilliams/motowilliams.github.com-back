@@ -1,23 +1,5 @@
---- 
-permalink: /:year/:month/:title
-maruku: 
-  png_dir: images/latex
-  png_url: /images/latex
-  use_tex: false
-  use_divs: false
+permalink: /:title
 lsi: false
-minutes: "    5986.6"
-destination: ./_site
-days: "       4.2"
-markdown: maruku
-exclude: 
-- config
-- CNAME
-- Rakefile
-- Capfile
-- _site.tar.gz
-- tomafro.net
+paginate: 5
 pygments: true
 pretty_style: html_extension
-auto: true
-server_port: 4000

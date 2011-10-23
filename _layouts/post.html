@@ -1,5 +1,9 @@
 ---
 layout: default
 ---
-{% include 'post' with page %}
-{% if post.similar %}Hello{% endif %}
+
+<div id="post">
+ <h1>{{ page.title | xml_escape }}</h1>
+{{ content }}
+{% include taglist.html %}
+</div>

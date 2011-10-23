@@ -1,0 +1,9 @@
+---
+layout: default
+title: Tags
+---
+
+Category:
+{% for topic in site.iterable.categories %}
+{{ topic.name }}
+{% endfor %}
