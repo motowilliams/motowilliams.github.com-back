@@ -6,10 +6,12 @@ layout: default
  <h1>{{ page.title | xml_escape }}</h1>
 {{ content | replace:"'","&#146;"}}
 {% include taglist.html %}
-Related Posts:
-<ul>
-{% for post in site.related_posts %}
-  <li><a href="{{ post.url }}">{{post.title }}</a><br /></li>
-{% endfor %}
-</ul>
+ <div>
+ Related Posts:
+ <ul>
+ {% for post in site.related_posts %}
+   <li><a href="{{ post.url }}">{{post.title }}</a><br /></li>
+ {% endfor %}
+ </ul>
+</div>
 </div>
