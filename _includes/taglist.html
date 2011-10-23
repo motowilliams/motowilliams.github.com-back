@@ -1,3 +1,6 @@
-{% for tag in page.categories %}
- File under: <a href="/tags#{{tag}}" rel="tag">{{tag}}</a>
-{% endfor %}
+{% if page.categories.quantity > 0 %}
+ File under: 
+ {% for tag in page.categories %}
+ <a href="/tags#{{tag}}" rel="tag">{{tag}}</a>
+ {% endfor %}
+{% endif %}
