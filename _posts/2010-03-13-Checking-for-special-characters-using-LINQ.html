@@ -6,17 +6,17 @@ categories: []
 ---
 
 <p><img class="imagefloatleft" title="wussy" src="/assets/images/wussy.png" alt="wussy" width="240" height="82"></p>
-<p>Why on earth am I posting this?&nbsp; For the simple reason of hoping if I take the time to put it down on “paper” that I will never have a need to use such a thing again.&nbsp; Call it superstition.</p>
+<p>Why on earth am I posting this?&nbsp; For the simple reason of hoping if I take the time to put it down on "paper" that I will never have a need to use such a thing again.&nbsp; Call it superstition.</p>
 <p>Here is some specific background of why this came about.&nbsp; A scenario came up where I was migrating some test data from one platform to another.&nbsp; Some of the source data was encrypted (even in test system) and for my destination system I didn't care about that data anyway.&nbsp; If I came across any of that encrypted information and would just put blanks in the destination.&nbsp; So in short if a string has special characters, nuke the data and write an empty string.</p>
 <p>For what ever reason I wasn't in a Regex mood and looked at LINQ for a solution.&nbsp; Plus it is migration code so who really cares how optimal it is.</p>
-<p>The first two lines of this extension method are something I read about and thought, “neat and when would I ever use it”.&nbsp; Basically <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.range.aspx" target="_blank">Enumerable.Range</a> will give you a range of of numbers with a starting number and a count.</p>
+<p>The first two lines of this extension method are something I read about and thought, "neat and when would I ever use it".&nbsp; Basically <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.range.aspx" target="_blank">Enumerable.Range</a> will give you a range of of numbers with a starting number and a count.</p>
 
 <blockquote><p>IEnumerable lowRange = Enumerable.Range(0, 32);</p></blockquote>
 <p>The next albeit messy part takes the input string and converts it to a character array then takes each character and converts it to is ascii code representation.</p>
 
 <blockquote><p>IEnumerable enumerable = value.ToCharArray().Select(x =&gt; Convert.ToInt32(((int)x).ToString()));</p></blockquote>
 
-<p>The last bit was even more obscure than the range bit. <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.intersect.aspx" target="_blank">Enumerable.Intersect</a> “Produces the set intersection of two sequences.”&nbsp; If you have two lists, {1,2,3} and {3,4,5} the resultant list will be 3 with a .Count() of 1.</p>
+<p>The last bit was even more obscure than the range bit. <a href="http://msdn.microsoft.com/en-us/library/system.linq.enumerable.intersect.aspx" target="_blank">Enumerable.Intersect</a> "Produces the set intersection of two sequences."&nbsp; If you have two lists, {1,2,3} and {3,4,5} the resultant list will be 3 with a .Count() of 1.</p>
 
 {% highlight c# %}
 public static class StringExtensions
