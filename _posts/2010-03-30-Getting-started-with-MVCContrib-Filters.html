@@ -66,7 +66,7 @@ public ActionResult FixErrors()
 }
 {% endhighlight %}
 
-<p>What's happening on the sending side with these attributes is when a RedirectToRouteResult is returned from an action (in this case we're using RedirectToAction) any data that is the ModelState dictionary will be copied into TempData – A.U.T.O.M.A.T.I.C.A.L.L.Y. You don't have to manually do it yourself!</p>
+<p>What's happening on the sending side with these attributes is when a RedirectToRouteResult is returned from an action (in this case we're using RedirectToAction) any data that is the ModelState dictionary will be copied into TempData - A.U.T.O.M.A.T.I.C.A.L.L.Y. You don't have to manually do it yourself!</p>
 <p><img class="imagefloatleft" src="/assets/images/SimpleValidationError.png"></p>
 <p>What's happening on the receiving side with these attributes is when a ViewResultBase is returned from an action (in this case we're using View) all the data that was previously put into TempData is copied out of TempData and put back into ModelState</p>
 <p>In this case since we're in the FixErrors action the errors that we just got back from the [ModelStateToTempData] attribute will be displayed on the user form. Additionally we're also getting back the values of the "bad submission" from the end user so that for non-trivial (or really any) forms they don't have to re-enter their data.</p>

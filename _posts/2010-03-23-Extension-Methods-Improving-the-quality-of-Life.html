@@ -27,7 +27,7 @@ foreach( var validationResult in validationResults )
 bindingContext.ModelState.AddModelErrors(validationResults);
 {% endhighlight %}
 
-<p>Now that everything you thought was upright in the world is all in question, ok, not really – not even close.  In fact we've only saved three lines of code where such things are being used but I would argue if you try to keep small things like this in mind that over time your code base will start to reap the benefits.</p>
+<p>Now that everything you thought was upright in the world is all in question, ok, not really - not even close.  In fact we've only saved three lines of code where such things are being used but I would argue if you try to keep small things like this in mind that over time your code base will start to reap the benefits.</p>
 <p>Here is how I implemented the extension method.  Your mileage may vary.</p>
 
 {% highlight c# %}
