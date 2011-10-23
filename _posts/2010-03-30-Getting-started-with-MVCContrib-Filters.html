@@ -6,10 +6,10 @@ categories: [ActionFilters, Asp.Net MVC, MVCContrib]
 ---
 
 <p>What is MVCContrib?&nbsp; MVCContrib is a open source project was designed to add functionality and ease-of-use to the out of the box experience of the ASP.NET MVC Framework.&nbsp; It kicks in where MVC on its own has left off.&nbsp; MVCContrib is hosted on CodePlex at <a href="http://mvccontrib.codeplex.com">http://mvccontrib.codeplex.com</a> and it also a <a href="http://codeplex.org/Galleries/ASPNETOpenSourceGallery/MVCContrib.aspx" target="_blank">CodePlex Foundation Project</a>.</p>
-<p>In this post I’m going to cover a couple of the Action Filters that are included with MVCContrib, <strong>ModelStateToTempData</strong> and <strong>PassParametersDuringRedirect</strong>.</p>
+<p>In this post I'm going to cover a couple of the Action Filters that are included with MVCContrib, <strong>ModelStateToTempData</strong> and <strong>PassParametersDuringRedirect</strong>.</p>
 <h4>ModelStateToTempData</h4>
 <p>When you have this filter decorating your action method (or at the controller level) you will get a behavior in which that when model state gets created post model binding you might have a state in which you want available to another action method.&nbsp; This happens when you are practicing the <a href="http://en.wikipedia.org/wiki/Post/Redirect/Get" target="_blank">Post-Redirect-Get Pattern (PRG)</a>.</p>
-<p>Let’s say you have a CustomerEditModel that coming from a web form.&nbsp; You need a Post Action that takes in a CustomerEditModel and out of the box that DataAnnotations will engage and validate your model.&nbsp; Below is a model with two attributes, Required and DisplayName.&nbsp; <a href="http://bradwilson.typepad.com/blog/2010/01/input-validation-vs-model-validation-in-aspnet-mvc.html" target="_blank">Required may or may not be what you think it means</a> and DisplayName gives you an opportunity to give your labels a different name than from the reflected property type name when using the <a href="http://bradwilson.typepad.com/blog/2009/10/aspnet-mvc-2-templates-part-1-introduction.html" target="_blank">template helpers (go read Brad’s series now).</a></p>
+<p>Let's say you have a CustomerEditModel that coming from a web form.&nbsp; You need a Post Action that takes in a CustomerEditModel and out of the box that DataAnnotations will engage and validate your model.&nbsp; Below is a model with two attributes, Required and DisplayName.&nbsp; <a href="http://bradwilson.typepad.com/blog/2010/01/input-validation-vs-model-validation-in-aspnet-mvc.html" target="_blank">Required may or may not be what you think it means</a> and DisplayName gives you an opportunity to give your labels a different name than from the reflected property type name when using the <a href="http://bradwilson.typepad.com/blog/2009/10/aspnet-mvc-2-templates-part-1-introduction.html" target="_blank">template helpers (go read Brad's series now).</a></p>
 
 {% highlight c# %}
 public class CustomerEditModel
@@ -41,9 +41,9 @@ public ActionResult FixErrors()
 }
 {% endhighlight %}
 
-<p>Ok back to the story. When you submitted a nice clean valid model and you flow into the ModelState.IsValid block life is good. When you had some validation issues and you flow to the FixErrors RedirectToAction something particular needs to happen. ModelState has some your validation results that you will want to use to display validation hints back to your end users. The problem is that ModelState isn’t carried over, without any intervention to the next Action method being called.</p>
+<p>Ok back to the story. When you submitted a nice clean valid model and you flow into the ModelState.IsValid block life is good. When you had some validation issues and you flow to the FixErrors RedirectToAction something particular needs to happen. ModelState has some your validation results that you will want to use to display validation hints back to your end users. The problem is that ModelState isn't carried over, without any intervention to the next Action method being called.</p>
 <h5>Enter the ModelStateToTempData Attribute</h5>
-<p>Add a [ModelStateToTempData] to the action method that the modelstate is being generated from, let’s call it the sender, AND the action method that needs to use it, maybe call it the reciever?</p>
+<p>Add a [ModelStateToTempData] to the action method that the modelstate is being generated from, let's call it the sender, AND the action method that needs to use it, maybe call it the reciever?</p>
 
 {% highlight c# %}
 [HttpPost]
@@ -66,13 +66,13 @@ public ActionResult FixErrors()
 }
 {% endhighlight %}
 
-<p>What’s happening on the sending side with these attributes is when a RedirectToRouteResult is returned from an action (in this case we’re using RedirectToAction) any data that is the ModelState dictionary will be copied into TempData – A.U.T.O.M.A.T.I.C.A.L.L.Y. You don’t have to manually do it yourself!</p>
-<p><img class="imagefloatleft" src="/asset/images/SimpleValidationError.png"></p>
-<p>What’s happening on the receiving side with these attributes is when a ViewResultBase is returned from an action (in this case we’re using View) all the data that was previously put into TempData is copied out of TempData and put back into ModelState</p>
-<p>In this case since we’re in the FixErrors action the errors that we just got back from the [ModelStateToTempData] attribute will be displayed on the user form. Additionally we’re also getting back the values of the "bad submission" from the end user so that for non-trivial (or really any) forms they don’t have to re-enter their data.</p>
+<p>What's happening on the sending side with these attributes is when a RedirectToRouteResult is returned from an action (in this case we're using RedirectToAction) any data that is the ModelState dictionary will be copied into TempData – A.U.T.O.M.A.T.I.C.A.L.L.Y. You don't have to manually do it yourself!</p>
+<p><img class="imagefloatleft" src="/assets/images/SimpleValidationError.png"></p>
+<p>What's happening on the receiving side with these attributes is when a ViewResultBase is returned from an action (in this case we're using View) all the data that was previously put into TempData is copied out of TempData and put back into ModelState</p>
+<p>In this case since we're in the FixErrors action the errors that we just got back from the [ModelStateToTempData] attribute will be displayed on the user form. Additionally we're also getting back the values of the "bad submission" from the end user so that for non-trivial (or really any) forms they don't have to re-enter their data.</p>
 <h4>PassParametersDuringRedirect</h4>
-<p>Since we live in a perfect world and our information management is so well done that our users get all the forms filled out perfectly that that always drop into the ModelState.IsValid block every time. Maybe we can just render the view from there … NO! My post, my rules. Thou shalt not render view from Post Methods. We have to PRG our way out of there. In this case we’d do something interesting with some persistence and then we’ll take the user to a ‘You Are <a href="http://www.urbandictionary.com/define.php?term=teh" target="_blank">Teh</a> <a href="http://www.tehawesome.net/" target="_blank">Awesome</a>‘ page.</p>
-<p>Let’s take the same controller action methods but add one more attribute to them, [PassParametersDuringRedirect]</p>
+<p>Since we live in a perfect world and our information management is so well done that our users get all the forms filled out perfectly that that always drop into the ModelState.IsValid block every time. Maybe we can just render the view from there … NO! My post, my rules. Thou shalt not render view from Post Methods. We have to PRG our way out of there. In this case we'd do something interesting with some persistence and then we'll take the user to a ‘You Are <a href="http://www.urbandictionary.com/define.php?term=teh" target="_blank">Teh</a> <a href="http://www.tehawesome.net/" target="_blank">Awesome</a>‘ page.</p>
+<p>Let's take the same controller action methods but add one more attribute to them, [PassParametersDuringRedirect]</p>
 
 {% highlight c# %}
 [HttpPost]
@@ -96,6 +96,6 @@ public ActionResult Success(CustomerEditModel customerEditModel)
 }
 {% endhighlight %}
 
-<p>I’d like to point out that the difference between the two RedirectToAction call in the CreateCustomer Action Method.  The second one, the one that ships with Asp.NET MVC and the first one has the nice expression in there.  This is another nugget that comes with MVCContrib.  This flavor of the RedirectToAction extension method will take in a an expression and make sure that the destination method will have the correct parameters passed to it.</p>
-<p>The new attribute added to the methods, [PassParametersDuringRedirect] is bringing some more pleasant PRG stuff to the controller.  After the valid customer has been ‘persisted’ we want to show the user a Sucess page.  In this case we want to show the model (or maybe another model with additional information) thus the method signature as so <strong>public ActionResult Success(CustomerEditModel customerEditModel)</strong>.  This is very similar to the [ModelStateToTempData] behaviour.</p>
-<p>I hope this information has helped.  Just until very recently I didn’t know these things were in the MVCContrib project and now I have some code to delete from our current code base.</p>
+<p>I'd like to point out that the difference between the two RedirectToAction call in the CreateCustomer Action Method.  The second one, the one that ships with Asp.NET MVC and the first one has the nice expression in there.  This is another nugget that comes with MVCContrib.  This flavor of the RedirectToAction extension method will take in a an expression and make sure that the destination method will have the correct parameters passed to it.</p>
+<p>The new attribute added to the methods, [PassParametersDuringRedirect] is bringing some more pleasant PRG stuff to the controller.  After the valid customer has been ‘persisted' we want to show the user a Sucess page.  In this case we want to show the model (or maybe another model with additional information) thus the method signature as so <strong>public ActionResult Success(CustomerEditModel customerEditModel)</strong>.  This is very similar to the [ModelStateToTempData] behaviour.</p>
+<p>I hope this information has helped.  Just until very recently I didn't know these things were in the MVCContrib project and now I have some code to delete from our current code base.</p>

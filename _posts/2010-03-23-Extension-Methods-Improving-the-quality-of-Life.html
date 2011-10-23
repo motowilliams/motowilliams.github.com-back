@@ -27,7 +27,7 @@ foreach( var validationResult in validationResults )
 bindingContext.ModelState.AddModelErrors(validationResults);
 {% endhighlight %}
 
-<p>Now that everything you thought was upright in the world is all in question, ok, not really – not even close.  In fact we’ve only saved three lines of code where such things are being used but I would argue if you try to keep small things like this in mind that over time your code base will start to reap the benefits.</p>
+<p>Now that everything you thought was upright in the world is all in question, ok, not really – not even close.  In fact we've only saved three lines of code where such things are being used but I would argue if you try to keep small things like this in mind that over time your code base will start to reap the benefits.</p>
 <p>Here is how I implemented the extension method.  Your mileage may vary.</p>
 
 {% highlight c# %}
@@ -63,7 +63,7 @@ if( validationResults.Count() > 0 )
   bindingContext.ModelState.AddModelErrors(validationResults);
 {% endhighlight %}
 
-<p>Where ValidateAnnotations is implemented as follows.  Also you if you prefer to change the where this can be used you can change the accessibility or change what this method extends to limit it’s exposure.</p>
+<p>Where ValidateAnnotations is implemented as follows.  Also you if you prefer to change the where this can be used you can change the accessibility or change what this method extends to limit it's exposure.</p>
 
 {% highlight c# %}
 public static class ValidationExtensions

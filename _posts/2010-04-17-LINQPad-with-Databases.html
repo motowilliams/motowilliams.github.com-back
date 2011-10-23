@@ -7,13 +7,13 @@ categories: [LINQPad, SQLite]
 
 <p><a href="http://www.linqpad.net/">LINQPad</a> is a fantastic free utility from author and C# guru <a href="http://www.albahari.com/">Joesph Albahari</a>.  Per the tag line on the LINQPad site “Kiss goodbye to SQL Management Studio!” and I would suggest that if you are a SQL Server Management Studio user and also interested in LINQ that you take the <a href="http://www.linqpad.net/Challenge.aspx">LINQPad Replacement Challenge</a>!</p>
 
-<p>I didn’t even know about LINQPad until a few years ago when I got the (then 3.0) <a href="http://www.albahari.com/nutshell/">C# 4.0 in a Nutshell</a> book.  It is one of those companion applications that plays a role in the book text and one of the important hooks between the book and the application is that when you registered your copy of the book with the site you received a code that enabled <a href="http://www.linqpad.net/Purchase.aspx">Autocompletion</a>.  Not sure if that is still an option or not.</p>
+<p>I didn't even know about LINQPad until a few years ago when I got the (then 3.0) <a href="http://www.albahari.com/nutshell/">C# 4.0 in a Nutshell</a> book.  It is one of those companion applications that plays a role in the book text and one of the important hooks between the book and the application is that when you registered your copy of the book with the site you received a code that enabled <a href="http://www.linqpad.net/Purchase.aspx">Autocompletion</a>.  Not sure if that is still an option or not.</p>
 
 <p>So what the heck is it already?  Well LINQPad is many things.  It is an application that will allow you to run LINQ queries against a number of things, Objects, LINQ to SQL, Entity Framework, XML, WCF Data Services (OData), SQLite and MySQL as well as a few others.  It has the <a href="http://www.sliver.com/dotnet/SnippetCompiler">Snippet Compiler</a> feel where you can write a couple of lines of code and F5 it to see what it does.  All around a good LINQ-to-* learning tool.</p>
 
 <p>So show me the code already.</p>
 
-<p>First we need a data store to hook up to LINQPad.  Let’s have a little taste of <a href="http://www.sqlite.org">SQLite</a> for some sample data.  I’ve download a local copy of SQLite and stubbed up a simple database called <strong>MyDatabase.db</strong>.  SQLite has a command line syntax that you can look into.  For the point of this post I started SQLite and used the .Read function and supplied a external file name with the contents of the file below.</p>
+<p>First we need a data store to hook up to LINQPad.  Let's have a little taste of <a href="http://www.sqlite.org">SQLite</a> for some sample data.  I've download a local copy of SQLite and stubbed up a simple database called <strong>MyDatabase.db</strong>.  SQLite has a command line syntax that you can look into.  For the point of this post I started SQLite and used the .Read function and supplied a external file name with the contents of the file below.</p>
 
 {% highlight sql %}
 BEGIN TRANSACTION;
@@ -25,15 +25,15 @@ INSERT INTO People VALUES(4,'Eric','Williams',2);
 COMMIT;
 {% endhighlight %}
 
-<p>Now start up LINQPad and click on the standard Add Connection function.  Here you’ll see a few nonstandard options, at least from the typical items you’d expect when you ‘add a connection’ from most other windows developer tools.</p>
+<p>Now start up LINQPad and click on the standard Add Connection function.  Here you'll see a few nonstandard options, at least from the typical items you'd expect when you ‘add a connection' from most other windows developer tools.</p>
 
 <p><img title="LINQPad_ChooseDataContext" alt="LINQPad_ChooseDataContext" src="/assets/images/LINQPad_ChooseDataContext.png"></p>
 
-<p>If you click on the ‘View more drivers…’ button you’ll find options for other third party LINQPad drivers.  In this case we’re looking for the SQlite drivers.</p>
+<p>If you click on the ‘View more drivers…' button you'll find options for other third party LINQPad drivers.  In this case we're looking for the SQlite drivers.</p>
 
 <p><img title="LINQPad_Choose_a_driver" alt="LINQPad_Choose_a_driver" src="/assets/images/LINQPad_Choose_a_driver.png"></p>
 
-<p>The driver install for the SQLite driver was pretty slick and seem less and you’ll end up with a third item in ‘Build data context automatically’ section.  Select the IQ driver and the SQLite provider and the location of the SQLite database created earlier.</p>
+<p>The driver install for the SQLite driver was pretty slick and seem less and you'll end up with a third item in ‘Build data context automatically' section.  Select the IQ driver and the SQLite provider and the location of the SQLite database created earlier.</p>
 
 <p><img title="LINQPad_ChooseDataContext_SQLLite_Driver" alt="LINQPad_ChooseDataContext_SQLLite_Driver" src="/assets/images/LINQPad_ChooseDataContext_SQLLite_Driver.png"></p>
 
