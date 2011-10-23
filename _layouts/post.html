@@ -4,6 +4,6 @@ layout: default
 
 <div id="post">
  <h1>{{ page.title | xml_escape }}</h1>
-{{ content }}
+{{ content | replace:"'","&#146;"}}
 {% include taglist.html %}
 </div>
