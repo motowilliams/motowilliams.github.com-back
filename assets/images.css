@@ -1,0 +1,13 @@
+.imagefloatleft
+{
+  border: 0;
+  float: left;
+  margin: 15px;
+}
+
+.imagefloatright
+{
+  border: 0;
+  float: right;
+  margin: 15px;
+}
