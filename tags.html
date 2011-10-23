@@ -1,22 +1,22 @@
 ---
 layout: default
-title: Tags
+title: Categories
 ---
 
-<ul id="tag-list">
-{% for tag in site.tags %}
-  <li><a href="#{{ tag | first | downcase | slugify }}">{{ tag | first }}</a></li>
+<ul id="category-list">
+{% for category in site.categories %}
+  <li><a href="#{{ category | first | downcase | slugify }}">{{ category | first }}</a></li>
 {% endfor %}
 </ul>
 
 {% assign first = true %}
-{% for tag in site.tags %}
+{% for category in site.categories %}
 	{% unless first == true %}
 	</ul>
 	{% endunless %}
-  <h3 id="{{ tag | first | downcase | slugify }}">{{ tag | first}} <a href="#" class="top" title="Back to top">&uarr;</a></h3>
+  <h3 id="{{ category | first | downcase | slugify }}">{{ category | first}} <a href="#" class="top" title="Back to top">&uarr;</a></h3>
     <ul>
-    {% for posts in tag %}
+    {% for posts in category %}
       {% for post in posts %}
         <li>
 			<span class="faux grid_2">{{ post.date | date: '%b %e, %Y' }}</span> 
