@@ -10,106 +10,15 @@ categories: [Linq, So Eric Remembers]
 <p>Before Linq I'd end up with the prototypical <em>foreach</em> code but this last time I need to (re)solve such a problem Linq had since been born.</p>
 <p>Here is an example:</p>
 
-{% highlight c# %}
-//Source object where depending on the length of the text
-public class RawRecords
-{
-  public int Id { get; set; }
-  public int Sequence { get; set; }
-  public DateTime Timestamp { get; set; }
-  public string Comment { get; set; }
-}
-{% endhighlight %}
-
-{% highlight c# %}
-//Destination object where you want the multiple comment lines to be rolled up into the destination CommentText property.
-public class Comment
-{
-  public int CommentId { get; set; }
-  public DateTime CommentTimestamp { get; set; }
-  public string CommentText { get; set; }
-}
-{% endhighlight %}
-
-{% highlight c# %}
-[TestMethod]
-public void single_comment_rollup()
-{
-    IEnumerable<RawRecords> rawRecords = GetSampleRow();
-    const string EXPECTED = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.";
- 
-    var actualComment = new Comment
-    {
-        CommentId = rawRecords.First().Id,
-        CommentTimestamp = rawRecords.First().Timestamp,
-        CommentText = string.Join("", rawRecords.OrderBy(ord => ord.Sequence).Select(x => x.Comment))
-    };
- 
-    Assert.AreEqual(EXPECTED, actualComment.CommentText);
-}
-{% endhighlight %}
+<script src="https://gist.github.com/1307866.js"> </script>
 
 <p>Big deal.  What if you have a set of data that has multiple comments</p>
 
-{% highlight c# %}
-[TestMethod]
-public void multiple_comment_rollup()
-{
-    IEnumerable<RawRecords> rawRecords = GetSampleRows();
-    const string EXPECTED_COMMENT_42 = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.";
-    const string EXPECTED_COMMENT_69 = "Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.";
- 
-    IEnumerable<Comment> actualComments =
-        from ncr in rawRecords
-        group ncr by new { ncr.Id, ncr.Timestamp }
-        into g
-        select new Comment
-        {
-            CommentId = g.Key.Id,
-            CommentTimestamp = g.Key.Timestamp,
-            CommentText = string.Join("", g.OrderBy(x => x.Sequence).Select(x => x.Comment))
-        };
- 
-    //If you have multiple asserts in your normal tests, well you know what will happen
-    Assert.AreEqual(EXPECTED_COMMENT_42, actualComments.Single(x => x.CommentId == 42).CommentText);
-    Assert.AreEqual(EXPECTED_COMMENT_69, actualComments.Single(x => x.CommentId == 69).CommentText);
-}
-{% endhighlight %}
+<script src="https://gist.github.com/1307867.js"> </script>
 
 <p>Here are the static helper methods I used to kruft up some sample data if you would like to play around with these queries</p>
 
-{% highlight c# %}
-private static IEnumerable<RawRecords> GetSampleRow()
-{
-    var timestamp1 = new DateTime(2010, 3, 12);
-    return new List<RawRecords>
-               {
-                   new RawRecords { Sequence = 4, Id = 42,  Timestamp = timestamp1, Comment = "et malesuada fames " },
-                   new RawRecords { Sequence = 1, Id = 42,  Timestamp = timestamp1, Comment = "Pellentesque habitant " },
-                   new RawRecords { Sequence = 3, Id = 42,  Timestamp = timestamp1, Comment = "senectus et netus " },
-                   new RawRecords { Sequence = 5, Id = 42,  Timestamp = timestamp1, Comment = "ac turpis egestas." },
-                   new RawRecords { Sequence = 2, Id = 42,  Timestamp = timestamp1, Comment = "morbi tristique " },
-               };
-}
- 
-private static IEnumerable<RawRecords> GetSampleRows()
-{
-    var timestamp1 = new DateTime(2010, 3, 12);
-    var timestamp2 = new DateTime(2010, 3, 13);
-    return new List<RawRecords>
-               {
-                   new RawRecords { Sequence = 4, Id = 42,  Timestamp = timestamp1, Comment = "et malesuada fames " },
-                   new RawRecords { Sequence = 3, Id = 42,  Timestamp = timestamp1, Comment = "senectus et netus " },
-                   new RawRecords { Sequence = 4, Id = 69,  Timestamp = timestamp2, Comment = "ante." },
-                   new RawRecords { Sequence = 2, Id = 42,  Timestamp = timestamp1, Comment = "morbi tristique " },
-                   new RawRecords { Sequence = 1, Id = 42,  Timestamp = timestamp1, Comment = "Pellentesque habitant " },
-                   new RawRecords { Sequence = 1, Id = 69,  Timestamp = timestamp2, Comment = "Vestibulum tortor quam, " },
-                   new RawRecords { Sequence = 2, Id = 69,  Timestamp = timestamp2, Comment = "feugiat vitae, ultricies " },
-                   new RawRecords { Sequence = 3, Id = 69,  Timestamp = timestamp2, Comment = "eget, tempor sit amet, " },
-                   new RawRecords { Sequence = 5, Id = 42,  Timestamp = timestamp1, Comment = "ac turpis egestas." },
-               };
-}
-{% endhighlight %}
+<script src="https://gist.github.com/1307868.js"> </script>
 
 <p>I do realized that ORM and other database queries have the ability to do these aggregates for you.  I was merely trying to point out some Linq tricks for those situations where you are dealing with objects and might not be in a data access situation.</p>
 
