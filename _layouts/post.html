@@ -7,6 +7,9 @@ layout: default
 {{ content | replace:"'","&#146;"}}
 {% include taglist.html %}
  <div>
+ {% include disqus.html %}
+ </div>
+ <div>
  Related Posts:
  <ul>
  {% for post in site.related_posts %}
