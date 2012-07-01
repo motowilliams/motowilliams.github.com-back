@@ -6,8 +6,6 @@ author: "Eric Williams"
 categories: [code]
 ---
 
-# Installing the Sublime Text 2 Modific plugin #
-
 There really isn't enough nice things to say about [Sublime Text 2](http://www.sublimetext.com/).  It is a nice [cross platform minimalist text editor](http://www.sublimetext.com/2) that seems to get things right.  You can even install it Dropboxable aka Portable.  So run, don't walk over to Crazy Larry's House of Editors and [get you some editor joy](http://www.sublimetext.com/buy).   
 
 Since you are probably working on a [source file or two some of some flavor or another](https://github.com/languages/) you are probably using with source control.  This will be the case if the file is important to you but we're not here today to talk about that.  For the intent of this post you are using [git](http://git-scm.com/) and you are interesting in some lightweight status of your changes in-flight.
