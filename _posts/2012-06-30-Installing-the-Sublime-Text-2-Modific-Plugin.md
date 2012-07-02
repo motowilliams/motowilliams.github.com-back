@@ -17,7 +17,7 @@ Since you are probably working on a [source file or two some of some flavor or a
 Sublime Text 2 and its [Sublime Package Control](http://wbond.net/sublime_packages/package_control) make this very easy.
 
 1. Open subl
-2. Open the Sublime Text 2 console.  **View > Show Console** or **Ctrl+`**
+2. Open the Sublime Text 2 console.  **View > Show Console** or **Ctrl+&#x60;**
 3. Paste the following (from [Sublime Package Control installation](http://wbond.net/sublime_packages/package_control/installation)): 
 
 > import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print 'Please restart Sublime Text to finish installation'
