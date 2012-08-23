@@ -1,0 +1,15 @@
+---
+layout: post
+image_root: "/assets/images/"
+title: "Nuget Upgrade Button"
+author: "Eric Williams"
+categories: [code, nuget]
+---
+
+I'm going start tracking how many times this upgrade nuget button doesn't work.  I seems that between 100% and 100% of the time the button does nothing.
+
+ - 2.0.30619.9119 » 2.0.30625.9003 - No Dice!
+
+Maybe this will be the last and only item in that list.
+
+<img title="Y U NO FIRE" width="550px" src="{{page.image_root}}NugetUpdateAvailableClickHere.png" alt="Y U NO FIRE" />
